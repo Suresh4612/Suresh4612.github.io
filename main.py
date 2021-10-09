@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 
 
-load_model=open(os.path.join("static/winner_pred.pkl"),"rb")
+load_model=open(os.path.join("winner_pred.pkl"),"rb")
 
 
 
