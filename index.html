@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <tiltle>Match predictor</tiltle>
+  </head>
+  <body>
+    <p>Select teams</p>
+    <div>
+      <form method="POST" action="{{url_for('predict')}}">
+        <label>Team_1</label>
+        <input type="text" name="Team_1">
+        
+        
+      </br>
+        <label>Team_2</label>
+        <input type="text" name="Team_2">
+      </br>
+        <label for="venue">Venue</label>
+        <input type="text" name="venue">
+      </br>
+        <label for="toss_win">toss_win</label>
+        <input type="text" name="toss_win">
+      </br>
+        <label for="city">city</label>
+        <input type="text" name="city">
+      </br>
+        <label for="toss_dec">toss_dec</label>
+        <input type="text" name="toss_dec">
+      </br>
+        <button type="submit">Predict</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+    <div>
+      <h2>Prediction</h2>
+      {{sample_data}}
+      <h1>pred1</h1>
+      {{prediction}}
+    </div>
+  </body>
+</html>
